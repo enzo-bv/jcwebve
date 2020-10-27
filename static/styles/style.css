@@ -44,15 +44,18 @@ body {
   width: 100%;
 }
 
-#welcome > .background {
+.background {
   position: absolute;
   height: 85%;
   max-width: 100%;
   object-fit: contain;
   top: 0;
-  right: 0;
   filter: opacity(5%);
   z-index: 0;
+}
+
+#welcome > .background {
+  right: 0;
 }
 
 #header-menu {
