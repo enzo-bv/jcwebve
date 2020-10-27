@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
+:root {
+  font-size: 3vh;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#welcome {
+  background-color: #001524;
+}
+#welcome > h1 {
+  color: #48ffd5;
+  font-size: 2rem;
+  width: 65%;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+#welcome > h1::after {
+  content: "Te tenemos una solución segura, accesible y rápida";
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  width: 100%;
+}
+
+#welcome > .background {
+  position: absolute;
+  height: 85%;
+  max-width: 100%;
+  object-fit: contain;
+  top: 0;
+  right: 0;
+  filter: opacity(5%);
+  z-index: 0;
+}
+
+#header-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8vh;
+  box-sizing: border-box;
+  color: #48ffd5;
+  background-color: #003356;
+  padding: 1vh;
+  z-index: 1000;
+  align-items: center;
+}
+
+#header-menu #logo {
+  object-fit: contain;
+  height: 100%;
+  width: auto;
+}
+
+#header-menu a:-webkit-any-link {
+  display: inline-flex;
+  color: inherit;
+  margin: auto 2vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 100%;
+}
+
+#menu-list a:hover {
+  text-shadow: 0 0 5vh white;
+  transition-duration: 0.5s;
+}
+
+.next-section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 1vh 0;
+  object-fit: contain;
+}
+
+.next-section:hover {
+  filter: drop-shadow(0 0 0.5vh white);
+}
+
+#nosotros {
+  background-color: #006ebd;
+}
+
+@media (max-width: 600px) {
+  #menu-list a {
+    display: none;
+  }
+}
